@@ -1,0 +1,138 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+@import '../styles/libs-override';
+@import '../styles/base';
+$navbar-default-bg: #312312;
+$light-orange: #ff8c00;
+$navbar-default-color: $light-orange;
+
+/* Import Bootstrap & Fonts */
+
+
+/*$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";*/
+
+$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+@import '~bootstrap/scss/bootstrap';
+
+/*Import FontAwesome*/
+
+$fa-font-path: '/font-awesome/fonts';
+@import '~font-awesome/scss/font-awesome';
+$themify-font-path: '/assets/fonts';
+@import '../styles/themify-icons/themify-icons';
+
+/*@import '~intro.js/minified/introjs.min.css';
+@import '~intro.js/themes/introjs-nassim.css';*/
+
+
+/* *** Overall APP Styling can go here ***
+   --------------------------------------------
+   Note: This Component has ViewEncapsulation.None so the styles will bleed out
+
+*/
+
+@media (max-width: 767px) {
+    body {
+        background: #f1f1f1;
+        line-height: 18px;
+        /*padding-top: 30px;*/
+    }
+    h1 {
+        border-bottom: 3px #4189c7 solid;
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h1,
+    h2,
+    h3 {
+        padding: 3px 0;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        background: #f1f1f1;
+        line-height: 18px;
+        padding-top: 0px;
+    }
+    h1 {
+        border-bottom: 5px #4189c7 solid;
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h1,
+    h2,
+    h3 {
+        padding: 10px 0;
+    }
+}
+
+
+/*ul {
+    padding: 10px 25px;
+}
+
+ul li {
+    padding: 5px 0;
+}*/
+
+blockquote {
+    margin: 25px 10px;
+    padding: 10px 35px 10px 10px;
+    border-left: 10px #158a15 solid;
+    background: #edffed;
+}
+
+blockquote a,
+blockquote a:hover {
+    color: #068006;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    background: none;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+.wrapper-inner {
+    min-height: 100%;
+    height: auto !important;
+    margin-bottom: -$footer-height;
+    padding: 0 0 $footer-height;
+    // overflow: hidden;
+}
+
+.main-content {
+    width: 100%;
+    padding: 25px;
+    -webkit-box-flex: 1;
+    min-height: calc(100vh - (#{$top-navbar-height} + #{$footer-height}));
+    overflow: hidden;
+}

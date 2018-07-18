@@ -1,0 +1,30 @@
+﻿<!-- <app-navigation></app-navigation>
+
+<div class="container">
+
+    <router-outlet></router-outlet>
+
+    <app-custom-footer></app-custom-footer>
+</div> -->
+
+<div class="app" [ngClass]="settings.theme.skin" [class.navbar-fixed]="settings.theme.navbarIsFixed" [class.sidebar-fixed]="settings.theme.sidebarIsFixed" [class.horizontal-menu]="settings.theme.menu == 'horizontal'" [class.compact]="settings.theme.menuType == 'compact'"
+    [class.mini]="settings.theme.menuType == 'mini'" [class.menu-hide]="!settings.theme.showMenu">
+    <div class="wrapper">
+        <div class="wrapper-inner" [ngClass]="{ 'vertical-menu-tooltip-place': (settings.theme.menuType == 'mini' && settings.theme.menu == 'vertical'),
+                                    'horizontal-menu-tooltip-place': (settings.theme.menuType == 'mini' && settings.theme.menu == 'horizontal') }">
+            <div class="row align-items-center info">
+                <app-header></app-header>
+            </div>
+            <div class="d-flex h-100" [ngClass]="{'flex-row': settings.theme.menu == 'vertical', 'flex-column': settings.theme.menu != 'vertical'}">
+                <app-sidebar *ngIf="settings.theme.menu == 'vertical'"></app-sidebar>
+                <div class="main-content">
+                    <router-outlet></router-outlet>
+                </div>
+            </div>
+
+        </div>
+        <app-footer></app-footer>
+        <app-back-top position="200"></app-back-top>
+        <app-settings></app-settings>
+    </div>
+</div>

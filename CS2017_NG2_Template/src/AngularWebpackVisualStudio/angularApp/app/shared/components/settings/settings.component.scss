@@ -1,0 +1,86 @@
+@import '../../../../styles/variables';
+
+/*settings*/
+
+.settings {
+    position: fixed;
+    top: 0px;
+    right: ($scroll-width + 212) * -1;
+    z-index: 995;
+    width: 210px;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    &.show {
+        right: -1px;
+    }
+    .card {
+        border-top: none;
+        border-radius: 0;
+        .card-header {
+            padding: 0.34rem 1.25rem;
+            background: #fff !important;
+            border-radius: 0;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: bold;
+            border-top: 1px solid rgba(0, 0, 0, 0.125);
+            border-bottom: 0;
+        }
+    }
+    .card-body {
+        padding: 2px 20px;
+        h6 {
+            border-bottom: 1px solid #eceeef;
+            padding-bottom: 2px;
+        }
+    }
+    .theme {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 5px;
+        cursor: pointer;
+        &.light {
+            background-color: #ececec;
+        }
+        &.dark {
+            background-color: #262626;
+        }
+        &.blue {
+            background-color: #1875d1;
+        }
+        &.green {
+            background-color: #00786a;
+        }
+        &.combined {
+            overflow: hidden;
+            background-color: #262626;
+            &:before {
+                content: '';
+                background-color: #f5f5f5;
+                width: 10px;
+                height: 20px;
+                display: inline-block;
+            }
+        }
+        &.purple {
+            background-color: #7a1ea1;
+        }
+        &.orange {
+            background-color: #f47b00;
+        }
+        &.brown {
+            background-color: #5c3f36;
+        }
+        &.grey {
+            background-color: #445963;
+        }
+        &.pink {
+            background-color: #c1175a;
+        }
+    }
+    .custom-control .custom-control-description {
+        margin-top: -1px;
+    }
+}

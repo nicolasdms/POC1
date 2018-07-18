@@ -1,0 +1,1 @@
+{"version":3,"file":"disk-space.component.js","sourceRoot":"","sources":["disk-space.component.ts"],"names":[],"mappings":";;;;;;AAAA,OAAO,EAAE,SAAS,EAAE,iBAAiB,EAAE,MAAM,eAAe,CAAC;AAO7D;IAAA;IAAiC,CAAC;IAArB,kBAAkB;QAL9B,SAAS,CAAC;YACV,QAAQ,EAAE,gBAAgB;YAC1B,WAAW,EAAE,6BAA6B;YAC1C,aAAa,EAAE,iBAAiB,CAAC,IAAI;SACrC,CAAC;OACW,kBAAkB,CAAG;IAAD,yBAAC;CAAA,AAAlC,IAAkC;SAArB,kBAAkB"}

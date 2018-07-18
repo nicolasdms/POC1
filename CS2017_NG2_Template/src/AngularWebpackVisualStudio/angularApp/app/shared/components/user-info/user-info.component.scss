@@ -1,0 +1,24 @@
+#top-collapsible {
+    z-index: 1;
+    .info,
+    .left-border {
+        opacity: 0;
+        -webkit-transition: opacity 0.5s ease-out;
+        -moz-transition: opacity 0.5s ease-out;
+        transition: opacity 0.5s ease-out;
+    }
+    .close {
+        position: absolute;
+        right: 5px;
+        z-index: 1;
+    }
+    &.show {
+        .info,
+        .left-border {
+            opacity: 1;
+        }
+    }
+    .user-img {
+        width: 120px;
+    }
+}

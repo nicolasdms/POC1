@@ -1,0 +1,4 @@
+C:\Users\morais.n.CHAMPSELYSEES\Documents\Sources\DWRE Core\POC\CS2017_NG2_Template\tests\AngularWebpackVisualStudio_Tests\obj\Debug\netcoreapp2.0\AngularWebpackVisualStudio_Tests.csprojResolveAssemblyReference.cache
+C:\Users\morais.n.CHAMPSELYSEES\Documents\Sources\DWRE Core\POC\CS2017_NG2_Template\tests\AngularWebpackVisualStudio_Tests\obj\Debug\netcoreapp2.0\AngularWebpackVisualStudio_Tests.csproj.CoreCompileInputs.cache
+C:\Users\morais.n.CHAMPSELYSEES\Documents\Sources\DWRE Core\POC\CS2017_NG2_Template\tests\AngularWebpackVisualStudio_Tests\obj\Debug\netcoreapp2.0\AngularWebpackVisualStudio_Tests.AssemblyInfoInputs.cache
+C:\Users\morais.n.CHAMPSELYSEES\Documents\Sources\DWRE Core\POC\CS2017_NG2_Template\tests\AngularWebpackVisualStudio_Tests\obj\Debug\netcoreapp2.0\AngularWebpackVisualStudio_Tests.AssemblyInfo.cs

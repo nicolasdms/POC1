@@ -1,0 +1,25 @@
+<!--<kendo-dropdownlist id="userCountry"
+                    [data]="listItems"
+                    [textField]="'text'"
+                    [valueField]="'value'"
+                    [(ngModel)]="selectedItem">
+  <ng-template kendoDropDownListValueTemplate let-dataItem>
+    <span class="flag-icon flag-icon-{{selectedItem.value}}"></span>
+  </ng-template>
+  <ng-template kendoDropDownListItemTemplate let-dataItem>
+    <span class="flag-icon flag-icon-{{dataItem?.value}}"></span>
+  </ng-template>
+</kendo-dropdownlist>-->
+
+<div class="dropdown d-inline-block" dropdown>
+    <a class="dropdown-toggle no-caret pl-2 pr-2" id="userCountry" dropdownToggle aria-haspopup="true" aria-expanded="false">
+        <span class="flag-icon flag-icon-{{selectedItem.value}}"></span>
+    </a>
+
+    <div *dropdownMenu class="dropdown-menu dropdown-menu-right rounded-0 mt-3 p-0 box-shadow" role="menu">
+        <div class="flags-menu">
+            <a *ngFor="let item of listItems" role="menuitem" class="dropdown-item" (click)="selectedItem = item"><span class="flag-icon flag-icon-{{item?.value}} mr-2"></span>{{item?.text}}</a>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,11 @@
+C:\Users\morais.n.CHAMPSELYSEES\Documents\Sources\DWRE Core\POC\CS2017_NG2_Template\src\AngularWebpackVisualStudio\obj\Debug\netcoreapp2.0\AngularWebpackVisualStudio.csprojResolveAssemblyReference.cache
+C:\Users\morais.n.CHAMPSELYSEES\Documents\Sources\DWRE Core\POC\CS2017_NG2_Template\src\AngularWebpackVisualStudio\bin\Debug\netcoreapp2.0\AngularWebpackVisualStudio.deps.json
+C:\Users\morais.n.CHAMPSELYSEES\Documents\Sources\DWRE Core\POC\CS2017_NG2_Template\src\AngularWebpackVisualStudio\bin\Debug\netcoreapp2.0\AngularWebpackVisualStudio.runtimeconfig.json
+C:\Users\morais.n.CHAMPSELYSEES\Documents\Sources\DWRE Core\POC\CS2017_NG2_Template\src\AngularWebpackVisualStudio\bin\Debug\netcoreapp2.0\AngularWebpackVisualStudio.runtimeconfig.dev.json
+C:\Users\morais.n.CHAMPSELYSEES\Documents\Sources\DWRE Core\POC\CS2017_NG2_Template\src\AngularWebpackVisualStudio\bin\Debug\netcoreapp2.0\AngularWebpackVisualStudio.dll
+C:\Users\morais.n.CHAMPSELYSEES\Documents\Sources\DWRE Core\POC\CS2017_NG2_Template\src\AngularWebpackVisualStudio\bin\Debug\netcoreapp2.0\AngularWebpackVisualStudio.pdb
+C:\Users\morais.n.CHAMPSELYSEES\Documents\Sources\DWRE Core\POC\CS2017_NG2_Template\src\AngularWebpackVisualStudio\obj\Debug\netcoreapp2.0\AngularWebpackVisualStudio.csproj.CoreCompileInputs.cache
+C:\Users\morais.n.CHAMPSELYSEES\Documents\Sources\DWRE Core\POC\CS2017_NG2_Template\src\AngularWebpackVisualStudio\obj\Debug\netcoreapp2.0\AngularWebpackVisualStudio.AssemblyInfoInputs.cache
+C:\Users\morais.n.CHAMPSELYSEES\Documents\Sources\DWRE Core\POC\CS2017_NG2_Template\src\AngularWebpackVisualStudio\obj\Debug\netcoreapp2.0\AngularWebpackVisualStudio.AssemblyInfo.cs
+C:\Users\morais.n.CHAMPSELYSEES\Documents\Sources\DWRE Core\POC\CS2017_NG2_Template\src\AngularWebpackVisualStudio\obj\Debug\netcoreapp2.0\AngularWebpackVisualStudio.dll
+C:\Users\morais.n.CHAMPSELYSEES\Documents\Sources\DWRE Core\POC\CS2017_NG2_Template\src\AngularWebpackVisualStudio\obj\Debug\netcoreapp2.0\AngularWebpackVisualStudio.pdb

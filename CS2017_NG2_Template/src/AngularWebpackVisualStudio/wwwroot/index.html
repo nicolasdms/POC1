@@ -1,0 +1,265 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <base href="/">
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angular Webpack Template</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style>
+        @font-face {
+            font-family: MoonHouse;
+            src: url(/assets/fonts/moonhouse.eot);
+            src: url(/assets/fonts/moonhouse.eot?#iefix) format("embedded-opentype"), url(/assets/fonts/moonhouse.ttf) format("truetype")
+        }
+
+        @-webkit-keyframes trans1 {
+            0% {
+                -webkit-transform: translate3d(53px, 0, 0);
+                transform: translate3d(53px, 0, 0)
+            }
+
+            to {
+                -webkit-transform: translate3d(-250px, 0, 0);
+                transform: translate3d(-250px, 0, 0)
+            }
+        }
+
+        @keyframes trans1 {
+            0% {
+                -webkit-transform: translate3d(53px, 0, 0);
+                transform: translate3d(53px, 0, 0)
+            }
+
+            to {
+                -webkit-transform: translate3d(-250px, 0, 0);
+                transform: translate3d(-250px, 0, 0)
+            }
+        }
+
+        @-webkit-keyframes trans2 {
+            0% {
+                -webkit-transform: translate3d(-160px, 0, 0);
+                transform: translate3d(-160px, 0, 0)
+            }
+
+            to {
+                -webkit-transform: translate3d(53px, 0, 0);
+                transform: translate3d(53px, 0, 0)
+            }
+        }
+
+        @keyframes trans2 {
+            0% {
+                -webkit-transform: translate3d(-160px, 0, 0);
+                transform: translate3d(-160px, 0, 0)
+            }
+
+            to {
+                -webkit-transform: translate3d(53px, 0, 0);
+                transform: translate3d(53px, 0, 0)
+            }
+        }
+
+        @-webkit-keyframes trans3 {
+            0% {
+                -webkit-transform: translate3d(53px, 0, 0);
+                transform: translate3d(53px, 0, 0)
+            }
+
+            to {
+                -webkit-transform: translate3d(-220px, 0, 0);
+                transform: translate3d(-220px, 0, 0)
+            }
+        }
+
+        @keyframes trans3 {
+            0% {
+                -webkit-transform: translate3d(53px, 0, 0);
+                transform: translate3d(53px, 0, 0)
+            }
+
+            to {
+                -webkit-transform: translate3d(-220px, 0, 0);
+                transform: translate3d(-220px, 0, 0)
+            }
+        }
+
+        .loader-outer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: #fff;
+            visibility: visible;
+            opacity: 1;
+            transition: visibility .5s, opacity .3s linear
+        }
+
+            .loader-outer.hide {
+                visibility: hidden;
+                opacity: 0
+            }
+
+            .loader-outer .loader-container {
+                height: 100%;
+                width: 100%;
+                display: table
+            }
+
+                .loader-outer .loader-container .loader-inner {
+                    vertical-align: middle;
+                    height: 100%;
+                    display: table-cell
+                }
+
+                    .loader-outer .loader-container .loader-inner .loader {
+                        width: 80px;
+                        margin: auto;
+                        position: relative;
+                        height: 60px
+                    }
+
+                        .loader-outer .loader-container .loader-inner .loader .mask {
+                            position: absolute;
+                            overflow: hidden;
+                            border-radius: 5px
+                        }
+
+                            .loader-outer .loader-container .loader-inner .loader .mask .plane {
+                                background: #dd1b16;
+                                width: 400%;
+                                height: 100%;
+                                position: absolute
+                            }
+
+                        .loader-outer .loader-container .loader-inner .loader #top {
+                            width: 53px;
+                            height: 15px;
+                            left: 20px;
+                            -webkit-transform: skew(-15deg, 0);
+                            transform: skew(-15deg, 0)
+                        }
+
+                            .loader-outer .loader-container .loader-inner .loader #top .plane {
+                                -webkit-animation: trans1 1.3s ease-in infinite 0s backwards;
+                                animation: trans1 1.3s ease-in infinite 0s backwards
+                            }
+
+                        .loader-outer .loader-container .loader-inner .loader #middle {
+                            width: 33px;
+                            height: 15px;
+                            left: 20px;
+                            top: 15px;
+                            -webkit-transform: skew(-15deg, 40deg);
+                            transform: skew(-15deg, 40deg)
+                        }
+
+                            .loader-outer .loader-container .loader-inner .loader #middle .plane {
+                                -webkit-transform: translateZ(0);
+                                transform: translateZ(0);
+                                background: #dd1b16;
+                                -webkit-animation: trans2 1.3s linear infinite .3s backwards;
+                                animation: trans2 1.3s linear infinite .3s backwards
+                            }
+
+                        .loader-outer .loader-container .loader-inner .loader #bottom {
+                            width: 53px;
+                            height: 15px;
+                            top: 30px;
+                            -webkit-transform: skew(-15deg, 0);
+                            transform: skew(-15deg, 0)
+                        }
+
+                            .loader-outer .loader-container .loader-inner .loader #bottom .plane {
+                                -webkit-animation: trans3 1.3s ease-out infinite .7s backwards;
+                                animation: trans3 1.3s ease-out infinite .7s backwards
+                            }
+
+                        .loader-outer .loader-container .loader-inner .loader p.loader-text {
+                            color: #000;
+                            position: absolute;
+                            top: 42px;
+                            font-family: MoonHouse;
+                            font-size: 16px
+                        }
+
+                            .loader-outer .loader-container .loader-inner .loader p.loader-text span {
+                                color: #dd1b16
+                            }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px
+        }
+
+        ::-webkit-scrollbar-button {
+            width: 0;
+            height: 0
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #e1e1e1;
+            border: 0 none #fff;
+            border-radius: 0
+        }
+
+            ::-webkit-scrollbar-thumb:hover {
+                background: #ccc
+            }
+
+            ::-webkit-scrollbar-thumb:active {
+                background: #888
+            }
+
+        ::-webkit-scrollbar-track {
+            background: #666;
+            border: 0 none #fff;
+            border-radius: 0
+        }
+
+            ::-webkit-scrollbar-track:hover {
+                background: #666
+            }
+
+            ::-webkit-scrollbar-track:active {
+                background: #333
+            }
+
+        ::-webkit-scrollbar-corner {
+            background: transparent
+        }
+    </style>
+
+    <!--<script src="assets/intro.min.js"></script>-->
+    <link rel="stylesheet" href="node_modules/intro.js/minified/introjs.min.css">
+    <script src="node_modules/intro.js/minified/intro.min.js"></script>
+</head>
+
+<body>
+    <app-component></app-component>
+    <div class="loader-outer" id="preloader">
+        <div class="loader-container">
+            <div class="loader-inner">
+                <div class="loader">
+                    <div id="top" class="mask">
+                        <div class="plane"></div>
+                    </div>
+                    <div id="middle" class="mask">
+                        <div class="plane"></div>
+                    </div>
+                    <div id="bottom" class="mask">
+                        <div class="plane"></div>
+                    </div>
+                    <p class="loader-text">DW<span>RE</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="/dist/polyfills.4772de7dd27e7eda723a.bundle.js"></script><script type="text/javascript" src="/dist/vendor.4772de7dd27e7eda723a.bundle.js"></script><script type="text/javascript" src="/dist/app.4772de7dd27e7eda723a.bundle.js"></script></body>
+
+</html>

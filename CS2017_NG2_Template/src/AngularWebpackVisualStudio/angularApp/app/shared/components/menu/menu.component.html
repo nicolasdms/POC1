@@ -1,0 +1,36 @@
+﻿<div class="menu-wrapper ps" id="sidebar" [perfectScrollbar]="config">
+    <div class="list-group panel test">
+        <ng-template ngFor let-mnuc [ngForOf]="menuItems">
+            <ng-container *ngIf="mnuc.children.length">
+                <ng-container *ngTemplateOutlet="tmplMenuContainer;context:{$implicit:mnuc}"></ng-container>
+            </ng-container>
+            <ng-container *ngIf="!mnuc.children.length">
+                <ng-container *ngTemplateOutlet="tmplMenu;context:{$implicit:mnuc}"></ng-container>
+            </ng-container>
+        </ng-template>
+    </div>
+</div>
+
+<ng-template #tmplMenuContainer let-mnu>
+    <a href="#menu{{mnu.id}}" class="list-group-item" [class.collapsed]="!mnu.isActive" [class.active-link]="mnu.isActive" data-toggle="collapse" [attr.data-parent]="mnu.parentId == null || mnu.parentId === 0 ? '#sidebar' : '#menu' + mnu.parentId" aria-expanded="false">
+        <span class="left-icon-menu" style="width:22px;display:inline-block;"><i class="{{mnu.icon}}"></i></span>
+        <span class="hidden-sm-down">{{mnu.title}}</span>
+    </a>
+    <div class="collapse" [class.show]="mnu.isActive" id="menu{{mnu.id}}">
+        <ng-template ngFor let-mnuc [ngForOf]="mnu.children">
+            <ng-container *ngIf="mnuc.children.length">
+                <ng-container *ngTemplateOutlet="tmplMenuContainer;context:{$implicit:mnuc}"></ng-container>
+            </ng-container>
+            <ng-container *ngIf="!mnuc.children.length">
+                <ng-container *ngTemplateOutlet="tmplMenu;context:{$implicit:mnuc}"></ng-container>
+            </ng-container>
+        </ng-template>
+    </div>
+</ng-template>
+
+<ng-template #tmplMenu let-mnu>
+    <a [routerLink]="mnu.routerLink" class="list-group-item collapsed" [class.active-link]="mnu.isActive" [attr.data-parent]="mnu.parentId == null || mnu.parentId === 0 ? '#sidebar' : '#menu' + mnu.parentId">
+        <span class="left-icon-menu"><i class="{{mnu.icon}}"></i></span>
+        <span class="hidden-sm-down">{{mnu.title}}</span>
+    </a>
+</ng-template>
