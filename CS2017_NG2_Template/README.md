@@ -17,6 +17,7 @@
 - Testing server usign _xUnit_
 - _Yarn_ & _npm 5_
 
+
 ## Authors
 <img src="https://avatars.githubusercontent.com/u/11268349?v=3" width="70" alt="Fabian Gosebrink"><img src="https://avatars.githubusercontent.com/u/3442158?v=3" width="70" alt="Damien Bowden"><img src="https://pbs.twimg.com/profile_images/707847627992338432/ytT_FxUY_400x400.jpg" width="70" alt="Roberto Simonetti">
 
@@ -60,7 +61,7 @@ Blogs:
 		- **tsconfig.json** & **tsconfig-aot.json** _TypeScript & ngc compiler options_
 		- **webpack.config.js** _Webpack configuration file for development & production of Angular app_
 - **tests**
-	- **AngularWebpackVisualStudio_Tests** _API tests_	
+	- **AngularWebpackVisualStudio_Tests** _API tests_
 
 ## <a name="2"></a>Installing
 Requirements:
